@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muskan's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const words = ["Coder", "Designer", "Problem Solver", "Visionary"];
+      let i = 0;
+      setInterval(() => {
+        document.getElementById('dynamic-title').innerText = words[i];
+        i = (i + 1) % words.length;
+      }, 2000);
+    });
+  </script>
+</head>
+
+<body class="bg-gradient-to-tr from-gray-900 via-purple-900 to-gray-900 text-white font-mono">
+  <header class="p-6 text-center">
+    <h1 class="text-5xl font-bold tracking-widest">Hey, I'm <span class="text-pink-400">Udita Surariya</span></h1>
+    <p class="mt-4 text-lg">I am a <span id="dynamic-title" class="text-yellow-300">Coder</span></p>
+  </header>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12">
+    <div class="bg-white text-black rounded-xl shadow-2xl p-6 transform hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">🛠️ Tech Stack</h2>
+      <ul class="list-disc list-inside">
+        <li>Python And Data Analytics</li>
+        <li>Tailwind CSS</li>
+        <li>React (Basics)</li>
+        <li>HTML5, CSS3, JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="bg-white text-black rounded-xl shadow-2xl p-6 transform hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">📂 Projects</h2>
+      <ul class="list-disc list-inside space-y-4">
+        <li>
+          <a href="https://github.com/udita31/Customer-Churn-Prediction" class="text-blue-600 hover:underline" target="_blank">Customer Churn Prediction</a>
+        </li>
+        <li>
+          <a href="https://github.com/udita31/YoutubeTranscriptSummarizer" class="text-blue-600 hover:underline" target="_blank">YouTube Transcript Summarizer</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="md:col-span-2 bg-white text-black rounded-xl shadow-2xl p-6 transform hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">🎯 About Me</h2>
+      <p>
+        Results-driven Software Developer with hands-on experience in full-stack web development and data analysis. Proficient in Python, JavaScript, and modern frameworks (Flask, React.js), with a proven ability to develop scalable web applications, analyze complex datasets, and optimize processes. 
+      </p>
+    </div>
+  </section>
+
+  <section class="px-8 pb-12">
+    <div class="bg-white text-black rounded-xl shadow-2xl p-6 transform hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">🔗 Connect with Me</h2>
+      <ul class="list-disc list-inside">
+        <li><a href="https://www.linkedin.com/in/uditasurariya" class="text-blue-600 hover:underline" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/udita31" class="text-blue-600 hover:underline" target="_blank">GitHub</a></li>
+        <li><a href="mailto:uditasurariya@gmail.com" class="text-blue-600 hover:underline">Email Me</a></li>
+      </ul>
+      <div class="mt-4">
+        <a href="https://drive.google.com/file/d/1sBCjaXZPZn4109NeAmCXvU6VXiYfcTfp/view?usp=sharing" target="_blank" class="...">
+📄 Download My Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-6 text-center bg-black text-white">
+    <p>Made with ☕ and 💻 by Udita Surariya • © 2024</p>
+  </footer>
+</body>
+
+</html>
